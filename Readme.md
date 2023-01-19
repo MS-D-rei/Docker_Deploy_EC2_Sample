@@ -24,3 +24,22 @@ Now, it’s widely used in other Linux distributions including Fedora, CentOS, O
 Most RPM files are binary with the compiled version of the software."
 
 ### 2. Install Docker in EC2 instance
+```
+sudo amazon-linux-extras install docker
+```
+
+### 3. Start Docker
+```
+sudo service docker start
+```
+
+### 4. Push local docker image to Docker Hub
+```
+docker build -t <image-name> .
+
+docker tag <image-name> <docker-hub-username>/<dockerhub-repository-name>
+
+docker login
+
+docker push <docker-hub-username>/<dockerhub-repository-name>
+```
