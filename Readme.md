@@ -27,7 +27,7 @@ Most RPM files are binary with the compiled version of the software."
 ### 2. Install Docker in EC2 instance
 ```
 // EC2 login console
-sudo amazon-linux-extras install docker
+sudo yum install docker
 ```
 
 ### 3. Start Docker
